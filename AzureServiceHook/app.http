@@ -1,0 +1,85 @@
+POST http://localhost:7044/api/pull-request/create
+Content-Type: application/json
+
+{
+    "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
+    "eventType": "git.pullrequest.create",
+    "resource": {
+        "pullRequestId": 1,
+        "url": "https://dev.azure.com/jokkdev",
+        "status": "completed",
+        "title": "Demo Pull Request",
+        "creationDate": "2024-07-11T22:00:00.000Z",
+        "description": "Lorem Ipsum",
+        "sourceRefName": "refs/head",
+        "destinationRefName": "refs/head",
+        "mergeStatus": "completed",
+        "createdBy": {
+            "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
+            "displayName": "John Doe",
+            "uniqueName": "John Doe",
+            "imageUrl": "https://dev.azure.com/jokkdev"
+        },
+        "reviewers": [
+            {
+                "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
+                "displayName": "John Doe",
+                "uniqueName": "John Doe",
+                "imageUrl": "https://dev.azure.com/jokkdev",
+                "vote": 0
+            }
+        ],
+        "commits": [
+            {
+                "commitId": "CB039996-363C-41F5-8A98-62D53B8C264E",
+                "url": "https://dev.azure.com/jokkdev"
+            }
+        ]
+    },
+    "createdDate": "2024-07-11T22:00:00.000Z"
+}
+
+###
+
+POST http://localhost:7044/api/pull-request/update
+Content-Type: application/json
+
+{
+    "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
+    "eventType": "git.pullrequest.create",
+    "resource": {
+        "pullRequestId": 1,
+        "url": "https://dev.azure.com/jokkdev",
+        "status": "completed",
+        "title": "Demo Pull Request",
+        "creationDate": "2024-07-11T22:00:00.000Z",
+        "description": "Lorem Ipsum",
+        "sourceRefName": "refs/head",
+        "destinationRefName": "refs/head",
+        "mergeStatus": "completed",
+        "createdBy": {
+            "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
+            "displayName": "John Doe",
+            "uniqueName": "John Doe",
+            "imageUrl": "https://dev.azure.com/jokkdev"
+        },
+        "reviewers": [
+            {
+                "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
+                "displayName": "John Doe",
+                "uniqueName": "John Doe",
+                "imageUrl": "https://dev.azure.com/jokkdev",
+                "vote": 0
+            }
+        ],
+        "commits": [
+            {
+                "commitId": "CB039996-363C-41F5-8A98-62D53B8C264E",
+                "url": "https://dev.azure.com/jokkdev"
+            }
+        ]
+    },
+    "createdDate": "2024-07-11T22:00:00.000Z"
+}
+
+###
