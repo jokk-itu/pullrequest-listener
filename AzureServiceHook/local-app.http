@@ -12,7 +12,7 @@ Content-Type: application/json
         "creationDate": "2024-07-11T22:00:00.000Z",
         "description": "Lorem Ipsum",
         "sourceRefName": "refs/head",
-        "destinationRefName": "refs/head",
+        "targetRefName": "refs/head",
         "mergeStatus": "completed",
         "createdBy": {
             "id": "CB039996-363C-41F5-8A98-62D53B8C264E",
@@ -55,7 +55,7 @@ Content-Type: application/json
         "creationDate": "2024-07-11T22:00:00.000Z",
         "description": "Lorem Ipsum",
         "sourceRefName": "refs/head",
-        "destinationRefName": "refs/head",
+        "targetRefName": "refs/head",
         "mergeStatus": "completed",
         "createdBy": {
             "id": "CB039996-363C-41F5-8A98-62D53B8C264E",

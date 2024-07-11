@@ -25,8 +25,8 @@ internal class PullRequestResource
   [JsonPropertyName("sourceRefName")]
   public required string SourceRefName { get; init; }
 
-  [JsonPropertyName("destinationRefName")]
-  public required string DestinationRefName { get; init; }
+  [JsonPropertyName("targetRefName")]
+  public required string TargetRefName { get; init; }
 
   [JsonPropertyName("mergeStatus")]
   public required string MergeStatus { get; init; }
