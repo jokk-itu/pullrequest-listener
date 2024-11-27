@@ -9,16 +9,6 @@ namespace AzureServiceHook;
 
 public class PullRequestCreateFunction(ILoggerFactory loggerFactory)
 {
-	private const string WorkPackageRegex = "^WP[0-9]+ $";
-	private const string FeatureRegex = "^F[0-9]+ $";
-	private const string CaseRegex = "^Case [0-9]+ ";
-	private const string BugfixRegex = "^Bugfix [0-9]+ ";
-
-	private const string RevertWorkPackageRegex = "^[Revert] WP[0-9]+ $";
-	private const string RevertFeatureRegex = "^[Revert] F[0-9]+ $";
-	private const string RevertCaseRegex = "^[Revert] Case [0-9]+ ";
-	private const string RevertBugfixRegex = "^[Revert] Bugfix [0-9]+ ";
-
 	private readonly ILogger _logger = loggerFactory.CreateLogger<PullRequestCreateFunction>();
 
 	[Function("PullRequestCreate")]
